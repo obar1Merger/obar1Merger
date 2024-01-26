@@ -1,20 +1,27 @@
 <svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        .container {
-          display: flex;
-          width: 100%;
-          height: 300px;
-          background-color: black;
-          color: white;
-        }
-      </style>
+<svg id="mySvg"></svg>
+<script>
+var svg = d3.select("#mySvg")
+var fo = svg.append('foreignObject')
+  .attr({
+  'x': 20, //anchor.w - tip.w,
+  'y': 20, //anchor.h + tip.h,
+  'width': 220,//foWidth,
+  'class': 'svg-tooltip'
+  });
+ var div = fo.append('xhtml:div')
+   .append('div')
+   .attr({
+   'class': 'tooltip'
+    });
+ div.append('div')
+    .attr('class', 'lead')
+    .html('<button onclick="trashfuntion()">Click Me</button>' );
 
-      <div class="container">
-      UUU
-
-      </div>
-    </div>
+ function trashfuntion() {
+     console.log("click")
+ }
+</script>
   </foreignObject>
 </svg>

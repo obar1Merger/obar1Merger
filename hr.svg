@@ -1,5 +1,5 @@
 
-<svg id="mySvg"></svg>
+<svg id="mySvg">
 <script>
 var svg = d3.select("#mySvg")
 var fo = svg.append('foreignObject')
@@ -22,3 +22,4 @@ var fo = svg.append('foreignObject')
      console.log("click")
  }
 </script>
+</svg>

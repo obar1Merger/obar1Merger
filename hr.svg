@@ -12,7 +12,7 @@
       </style>
 
       <div class="container">
-            <button onclick="window.location.href = "mailto:obar1@pm.me?subject=Share%20your%20CV&body=Dear%20Recipient,%0A%0AShare%20your%20CV%20please."">Send Email</button>
+            <button onclick="window.location.href = 'mailto:obar1@pm.me?subject=Share%20your%20CV&body=Dear%20Recipient,%0A%0AShare%20your%20CV%20please.'">Send Email</button>
 
 
       </div>
